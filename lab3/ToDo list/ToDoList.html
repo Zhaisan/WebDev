@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zhais's ToDo list</title>
+        <style>
+
+            .head-title{
+            background-color: rgb(22, 35, 59);
+            padding: 5px 20px;
+            margin-bottom: 50px;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            }
+
+            .main-item {
+            width: 50%;
+            margin: auto;
+            }
+
+            input[type="text"] {
+            padding: 8px 6px;
+            border: 1px solid grey;
+            border-radius: 3px;
+            margin: 5px;
+            width: 60%;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            }
+
+            .delete {
+            color: red;
+            position: absolute;
+            right: 15px;
+            background: none;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            }
+
+            .delete:hover {
+            background-color: #84A2BC;
+            color: white;
+            }
+
+            .item {
+            padding: 18px;
+            position: relative;
+            border-bottom: 1px solid grey;
+
+            }
+
+            label {
+            padding: 20px;
+            }
+
+            body {
+            margin: 0;
+            }
+
+            .adding {
+            padding: 8px 20px;
+            background-color: #1877f2;;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            margin-left: 25px;
+            }
+
+            .adding:hover {
+            background-color: rgb(63, 94, 194);
+            }
+
+            #items {
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 80%;
+            margin-bottom: 20px;
+            }
+
+            .form {
+            width: 80%;
+            margin: 40px ;
+            }
+
+        </style>
+</head>
+<body>
+    <div class = "head-title">
+        <h1 style = "color:rgb(243, 131, 39); margin-left: 7%;"> ToDo List</h1> 
+    </div>
+    <div class = "main-item">
+        <h2 style = "color: rgb(54, 54, 54); margin-left: 30%; font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;"> ToDo List </h2>
+        <div class = "form">
+            <input style = "font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;" type = "text" placeholder = "New Task" id = "in">
+            <button class = "adding" onclick = "add()"> Add </button>
+        </div>
+        <div id = "items">
+            <div class = "item">
+                <input class = "checker" onclick = "check(this)" type = "checkbox">
+                <label style = "font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;"> First item </label>
+                <button class = "delete" onclick = "remove(this)"> − </button>
+            </div>
+        </div>
+        <button class = "adding" onclick = "clearing()"> Clear </button>
+    </div>
+    <script src = "scripts.js"></script>
+   
+</body>
