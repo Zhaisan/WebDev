@@ -1,0 +1,9 @@
+.todo{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.done.content{
+    text-decoration: line-through;
+}
