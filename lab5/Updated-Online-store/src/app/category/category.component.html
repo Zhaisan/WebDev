@@ -1,0 +1,21 @@
+<!-- <div>
+    <fieldset>
+        <a [routerLink]='['/productlist']'>Electronics</a>
+    </fieldset>
+    <fieldset>Accessories</fieldset>
+    <fieldset>For kids</fieldset>
+</div> -->
+<h2> <strong>Categories:</strong> </h2>
+<div class="category-list" *ngFor="let category of categories">
+    <h2>
+        <a [routerLink]="['categories/',category.name]">
+            {{category.name}}
+        </a>
+    </h2>
+
+
+    <div class="category-img">
+        <br>
+        <img src="{{ category.img }}" style="width: 200px; height: 175px;">
+    </div>  
+</div>
