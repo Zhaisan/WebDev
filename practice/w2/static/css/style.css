@@ -1,0 +1,64 @@
+body .box {
+  width: 100px;
+  height: 100px;
+  color: white;
+
+  border-radius: 20px;
+  border-bottom-left-radius: 40px;;
+  
+  /* padding-top: 20px;
+  padding-left: 10px; */
+  padding: 20px 10px 15px 5px;
+
+  /* margin-top: 20px; */
+  margin: 20px 10px 15px 5px;
+}
+.b1 {
+  /* border-style: solid;
+  border-color: blue;
+  border-width: 5px; */
+
+  background: red;  
+  border: 5px blue solid;
+}
+.b2 {
+  background: rgb(34, 126, 238);
+  border: 5px black solid;
+}
+/* 3 for setting colors 
+1) named colors
+2) RGB ([0-255], [0-255], [0-255])
+3) HEX
+*/
+
+.go_up{
+  font-size: 20px;
+  background: green;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.header{
+  background: yellow;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+.icon{
+  background: yellow;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 140px;
+  left: 125px;
+}
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  /* text-align: center; */
+}
