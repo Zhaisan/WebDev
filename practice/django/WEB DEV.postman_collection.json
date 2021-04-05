@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "576cfc0d-87d0-43c9-bcfe-a535d7117528",
+		"name": "WEB DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "week10",
+			"item": [
+				{
+					"name": "practice",
+					"item": [
+						{
+							"name": "Main",
+							"item": [
+								{
+									"name": "Product List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/main/products/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"main",
+												"products",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product Show",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/main/products/1/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"main",
+												"products",
+												"1",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Core",
+							"item": [
+								{
+									"name": "Product List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/core/products/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"core",
+												"products",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product Show",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/core/products/10/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"core",
+												"products",
+												"10",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
