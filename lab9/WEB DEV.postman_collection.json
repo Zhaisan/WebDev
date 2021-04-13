@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "576cfc0d-87d0-43c9-bcfe-a535d7117528",
+		"name": "WEB DEV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "week10",
+			"item": [
+				{
+					"name": "practice",
+					"item": [
+						{
+							"name": "Main",
+							"item": [
+								{
+									"name": "Product List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/main/products/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"main",
+												"products",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product Show",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/main/products/1/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"main",
+												"products",
+												"1",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Core",
+							"item": [
+								{
+									"name": "Product List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/core/products/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"core",
+												"products",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product Show",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/core/products/10/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"core",
+												"products",
+												"10",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "week11",
+			"item": [
+				{
+					"name": "practice",
+					"item": [
+						{
+							"name": "Main",
+							"item": [
+								{
+									"name": "Product List",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}/main/products/",
+											"host": [
+												"{{BASE_URL}}"
+											],
+											"path": [
+												"main",
+												"products",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product Show",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/main/products/1/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"main",
+												"products",
+												"1",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Core",
+							"item": [
+								{
+									"name": "Products",
+									"item": [
+										{
+											"name": "Product List",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/core/products/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"core",
+														"products",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Product Show",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/core/products/10/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"core",
+														"products",
+														"10",
+														""
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "API",
+							"item": [
+								{
+									"name": "Category",
+									"item": [
+										{
+											"name": "Category List",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/categories/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"categories",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Category Create",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"category 3\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/api/categories/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"categories",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Category Update",
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"name\": \"category 1 updated\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{BASE_URL}}/api/categories/1/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"categories",
+														"1",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Category Delete",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/categories/22/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"categories",
+														"22",
+														""
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Category Show",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}/api/categories/1/",
+													"host": [
+														"{{BASE_URL}}"
+													],
+													"path": [
+														"api",
+														"categories",
+														"1",
+														""
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "week12",
+			"item": [
+				{
+					"name": "lab9",
+					"item": [
+						{
+							"name": "api",
+							"item": [
+								{
+									"name": "Company id vacancy",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": null
+									},
+									"response": []
+								},
+								{
+									"name": "Company list",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": null
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
